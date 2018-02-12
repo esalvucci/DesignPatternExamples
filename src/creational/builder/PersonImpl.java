@@ -1,7 +1,7 @@
 package creational.builder;
 
 /**
- * @author enrico
+ * @author Enrico Salvucci, according to Mirko Viroli's example
  *
  */
 public final class PersonImpl {
@@ -34,7 +34,7 @@ public final class PersonImpl {
     /**
      * Builder static class settings person data.
      */
-	public static class Builder implements Person {
+    public static class Builder implements Person {
 
         /**
          * Person's name
@@ -84,9 +84,9 @@ public final class PersonImpl {
      * default toString.
      * @return Person's data as a String
      */
-	public String toString() {
-		return "Name: " + this.name
-				+ " Surname: " + this.surname
-				+ " - Is married? " + this.isMarried;
-	}
+    public String toString() {
+        return "Name: " + this.name
+                + " Surname: " + this.surname
+                + " - Is married? " + this.isMarried;
+    }
 }
